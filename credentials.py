@@ -1,0 +1,1 @@
+# Store Twitter and Coinbase credentials
