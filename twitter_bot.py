@@ -1,16 +1,20 @@
 from credentials import *
+import crypto_currency as crypto
 import tweepy
 
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_token, access_token_secret)
-api = tweepy.API(auth)
 
-
-def tweet(tweet):
+def post_tweet(tweet):
     try:
         api.update_status(status=tweet)
     except tweepy.TweepError as e:
         print(e.reason)
 
 
-tweet(tweet='Hello, world!')
+if __name__ == '__main__':
+    auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+    auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
+    api = tweepy.API(auth)
+
+    crypto.init()
+
+    post_tweet(tweet=crypto.get_price())
