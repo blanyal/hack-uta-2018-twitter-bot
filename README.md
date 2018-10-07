@@ -2,6 +2,9 @@
 Application created for HackUTA 2018.  
 Python Twitter bot which tweets the price of Bitcoin and plots a prediction graph every hour.  
 
+<img src="https://raw.githubusercontent.com/blanyal/hack-uta-2018-twitter-bot/master/screenshot.jpg" width="400">
+
+
 ## Team members:  
  - [Blanyal D'Souza](https://github.com/blanyal)  
  - [Priyank Arora](https://github.com/priyank91)  
