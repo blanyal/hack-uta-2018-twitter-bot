@@ -4,9 +4,9 @@ from credentials import *
 from time import sleep
 
 
-def post_tweet(tweet):
+def post_tweet(filename, tweet):
     try:
-        api.update_status(status=tweet)
+        api.update_with_media(filename, status=tweet)
     except tweepy.TweepError as e:
         print(e.reason)
 
@@ -19,5 +19,5 @@ if __name__ == '__main__':
     crypto.init()
 
     while True:
-        post_tweet(tweet=crypto.get_price())
+        post_tweet(filename=crypto.plot_graph(), tweet=crypto.get_price())
         sleep(3600)
