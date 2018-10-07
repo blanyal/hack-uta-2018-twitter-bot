@@ -12,8 +12,6 @@ headers = {'X-CoinAPI-Key' : key}
 
 def init():
     api_key, api_secret = cred.get_coinbase_credentials()
-    key = cred.get_coinapi_credentials()
-
 
 
     global client
