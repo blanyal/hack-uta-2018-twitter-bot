@@ -3,9 +3,9 @@ Application created for HackUTA 2018.
 Python Twitter bot which tweets the price of Bitcoin every hour.
 
 ## Team members:  
- - Blanyal D'Souza  
- - Priyank Arora  
- - Shehzad ul Islam  
+ - [Blanyal D'Souza](https://github.com/blanyal)  
+ - [Priyank Arora](https://github.com/priyank91)  
+ - [Shehzad ul Islam](https://github.com/shehzadulislam)  
 
 
 ## Requirements
