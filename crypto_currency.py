@@ -7,13 +7,13 @@ from datetime import datetime, timedelta
 
 client = None
 currency_code = None
-key = None
-headers = None
+key = cred.get_coinapi_credentials()
+headers = {'X-CoinAPI-Key' : key}
 
 def init():
     api_key, api_secret = cred.get_coinbase_credentials()
     key = cred.get_coinapi_credentials()
-    headers = {'X-CoinAPI-Key' : key}
+
 
 
     global client
