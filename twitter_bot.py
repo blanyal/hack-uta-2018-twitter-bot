@@ -1,6 +1,7 @@
-from credentials import *
 import crypto_currency as crypto
 import tweepy
+from credentials import *
+from time import sleep
 
 
 def post_tweet(tweet):
@@ -17,4 +18,6 @@ if __name__ == '__main__':
 
     crypto.init()
 
-    post_tweet(tweet=crypto.get_price())
+    while True:
+        post_tweet(tweet=crypto.get_price())
+        sleep(3600)
