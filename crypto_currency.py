@@ -79,5 +79,4 @@ def plot_graph():
 	ax.legend(loc='best', fontsize=18);
 	plt.grid()
 	fig.savefig(img_filename)
-	plt.show()
 	return img_filename
