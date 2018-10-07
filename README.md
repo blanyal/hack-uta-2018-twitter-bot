@@ -11,6 +11,7 @@ Python Twitter bot which tweets the price of Bitcoin every hour.
 ## Requirements
  - Tweepy
  - Coinbase
+ - CoinAPI  
  - Python 3
  
 ## Usage
